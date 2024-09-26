@@ -10,7 +10,9 @@ cmake -G "ninja" -B ./build -S .
 
 # macOS
 
-cmake -G "Xcode" -B ./build -S .
+cmake -G "Xcode" -S . -B ./build
+
+cmake --build ./build --config Debug
 
 # Windows
 
